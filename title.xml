@@ -1,0 +1,30 @@
+<txp:if_section name="">
+  <txp:if_category>
+    <txp:hide>in a category url off of the root</txp:hide>
+    <txp:category title="1" /> &rsaquo; <txp:site_name />
+  <txp:else />
+    <txp:hide>the home page</txp:hide>
+    <txp:site_name /> &rsaquo; <txp:site_slogan />
+  </txp:if_category>
+<txp:else />
+  <txp:if_article_list>
+    <txp:if_category>
+      <txp:hide>category list</txp:hide>
+      <txp:category title="1" /> &rsaquo; <txp:section title="1" />
+    <txp:else />
+      <txp:hide>section landing</txp:hide>
+      <txp:section title="1" />
+    </txp:if_category>
+  <txp:else />
+    <txp:hide>page</txp:hide>
+    <txp:title />
+    <txp:if_article_category>
+      <txp:hide>category name</txp:hide>
+      &rsaquo; <txp:category1 title="1" />
+    </txp:if_article_category>
+    <txp:hide>section name</txp:hide>
+    &rsaquo; <txp:section title="1" />
+  </txp:if_article_list>
+  <txp:hide>site name</txp:hide>
+  &rsaquo; <txp:site_name />
+</txp:if_section>
