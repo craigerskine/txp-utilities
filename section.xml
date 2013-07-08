@@ -1,0 +1,11 @@
+<txp:if_section>
+  <txp:if_article_list>
+    <txp:if_category>
+      <!-- category page -->
+    <txp:else />
+      <!-- section landing page -->
+    </txp:if_category>
+  <txp:else />
+    <!-- individual article page -->
+  </txp:if_article_list>
+</txp:if_section>
