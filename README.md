@@ -1,4 +1,5 @@
-txp-native-page-title
+txp-native-starter
 =====================
 
-Textpattern: Native Page Title
+Textpattern: Native Starter
+Native Page and Form tags/functionality for Textpattern CMS.
